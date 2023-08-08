@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        style="@style/cardViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/textViewValor"
+                style="@style/textViewTitleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_currency_exchange"
+                android:drawablePadding="8dp"
+                android:text="Valor do litro"
+                app:layout_constraintBottom_toTopOf="@+id/textViewKmLitro"
+                app:layout_constraintEnd_toStartOf="@+id/textViewValorNum"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewValorNum"
+                style="@style/textViewNumItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textViewKmLitroNum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewValor"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="5,00" />
+
+            <TextView
+                android:id="@+id/textViewKmLitro"
+                style="@style/textViewTitleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_directions_car"
+                android:drawablePadding="8dp"
+                android:text="Kilometro por litro"
+                app:layout_constraintBottom_toTopOf="@+id/textViewDistancia"
+                app:layout_constraintEnd_toStartOf="@+id/textViewKmLitroNum"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValor" />
+
+            <TextView
+                android:id="@+id/textViewKmLitroNum"
+                style="@style/textViewNumItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textViewDistanciaNum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewKmLitro"
+                app:layout_constraintTop_toBottomOf="@+id/textViewValorNum"
+                tools:text="13,0" />
+
+            <TextView
+                android:id="@+id/textViewDistancia"
+                style="@style/textViewTitleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_mode_of_travel"
+                android:drawablePadding="8dp"
+                android:text="Distancia"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTotal"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDistanciaNum"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKmLitro" />
+
+            <TextView
+                android:id="@+id/textViewDistanciaNum"
+                style="@style/textViewNumItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/textViewTotalNum"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textViewDistancia"
+                app:layout_constraintTop_toBottomOf="@+id/textViewKmLitroNum"
+                tools:text="100" />
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                style="@style/textViewTitleItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/baseline_attach_money"
+                android:drawablePadding="8dp"
+                android:text="Total"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textViewTotalNum"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDistancia" />
+
+            <TextView
+                android:id="@+id/textViewTotalNum"
+                style="@style/textViewNumItem"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textViewTotal"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDistanciaNum"
+                tools:text="38,46" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

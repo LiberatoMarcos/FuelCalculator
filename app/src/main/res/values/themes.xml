@@ -13,4 +13,24 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="textViewTitleItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">8dp</item>
+    </style>
+
+    <style name="textViewNumItem" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">textEnd</item>
+    </style>
+
+    <style name="cardViewItem" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">6dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+    </style>
 </resources>
